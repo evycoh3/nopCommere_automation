@@ -1,4 +1,10 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.882 s - in TestSuite
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 3.714 s <<< FAILURE! - in TestSuite
+com.tests.AddDiscountTest.setup  Time elapsed: 2.954 s  <<< FAILURE!
+java.lang.NullPointerException
+
+com.tests.AddCustomerTest.setup  Time elapsed: 2.955 s  <<< FAILURE!
+java.lang.NullPointerException
+

@@ -9,8 +9,10 @@ C:\Users\evyatar\IdeaProjects\nopcommerce_Automation\src\main\java\com\helper\dr
 C:\Users\evyatar\IdeaProjects\nopcommerce_Automation\src\main\java\com\helper\pages\AddNewDiscountPage.java
 C:\Users\evyatar\IdeaProjects\nopcommerce_Automation\src\main\java\com\helper\annotation\FrameworkAnnotation.java
 C:\Users\evyatar\IdeaProjects\nopcommerce_Automation\src\main\java\com\helper\pages\AddNewCustomerPage.java
+C:\Users\evyatar\IdeaProjects\nopcommerce_Automation\src\main\java\com\helper\driver\RemoteDriverFactory.java
 C:\Users\evyatar\IdeaProjects\nopcommerce_Automation\src\main\java\com\helper\listeners\AnnotationTransformer.java
 C:\Users\evyatar\IdeaProjects\nopcommerce_Automation\src\main\java\com\helper\reports\ExtentLogger.java
+C:\Users\evyatar\IdeaProjects\nopcommerce_Automation\src\main\java\com\helper\driver\LocalDriverFactory.java
 C:\Users\evyatar\IdeaProjects\nopcommerce_Automation\src\main\java\com\helper\reports\ExtentReport.java
 C:\Users\evyatar\IdeaProjects\nopcommerce_Automation\src\main\java\com\helper\config\ConfigFactory.java
 C:\Users\evyatar\IdeaProjects\nopcommerce_Automation\src\main\java\com\helper\driver\DriverFactory.java

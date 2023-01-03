@@ -11,7 +11,7 @@ public final class Driver {
 
     public static void init(){
         if(Objects.isNull(DriverManager.get())){
-            DriverManager.set(DriverFactory.getDriver(ConfigFactory.getConfig().browser()));
+            DriverManager.set(DriverFactory.getDriver(ConfigFactory.getConfig().runmode(),ConfigFactory.getConfig().browser()));
             DriverManager.get().manage().window().maximize();
             DriverManager.get().manage().timeouts().implicitlyWait(Duration.ofSeconds(ConfigFactory.getConfig().implicitTime()));
             DriverManager.get().manage().timeouts().pageLoadTimeout(Duration.ofSeconds(ConfigFactory.getConfig().explicitTime()));

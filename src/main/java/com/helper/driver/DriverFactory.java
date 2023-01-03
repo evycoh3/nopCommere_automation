@@ -6,23 +6,23 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
+
+import java.net.MalformedURLException;
+import java.net.URL;
 
 public final class DriverFactory {
 
     private DriverFactory(){}
 
-    public static WebDriver getDriver(String browser){
-        WebDriver driver;
-        if(browser.equalsIgnoreCase("chrome")){
-            WebDriverManager.chromedriver().setup();
-            driver=new ChromeDriver();
+    public static WebDriver getDriver(String runmode,String browser){
+        WebDriver driver = null;
+        if(runmode.equalsIgnoreCase("local")) {
+            driver=LocalDriverFactory.getLocalDriver(browser);
         }
-        else if(browser.equalsIgnoreCase("firefox")){
-            WebDriverManager.firefoxdriver().setup();
-            driver=new FirefoxDriver();
-        }
-        else{
-            throw new RuntimeException("Driver is not set properly");
+        else if(runmode.equalsIgnoreCase("remote")){
+            driver=RemoteDriverFactory.getRemoteDriver(browser);
         }
         return driver;
     }

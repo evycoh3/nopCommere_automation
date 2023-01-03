@@ -2,6 +2,7 @@ com\helper\driver\DriverManager.class
 com\helper\listeners\ListenerClass.class
 com\helper\driver\Driver.class
 com\helper\reports\ExtentManager.class
+com\helper\driver\RemoteDriverFactory.class
 com\helper\pages\BasePage.class
 com\helper\reports\ExtentReport.class
 com\helper\pages\LoginPage.class
@@ -10,6 +11,7 @@ com\helper\pages\components\AddCustomerComponents.class
 com\helper\config\ConfigFactory.class
 com\helper\driver\DriverFactory.class
 com\helper\reports\ExtentLogger.class
+com\helper\driver\LocalDriverFactory.class
 com\helper\explicit\ExplicitWaitFactory.class
 com\helper\pages\components\AddNewDiscountComponents.class
 com\helper\enums\WaitStrategy.class

@@ -13,6 +13,8 @@ public interface FrameworkConfig extends Config {
     int pageLoadTime();
 
     int implicitTime();
+    String runmode();
+    String remoteurl();
 
 }
 

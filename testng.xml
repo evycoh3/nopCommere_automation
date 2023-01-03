@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="com.helper.listeners.ListenerClass"></listener>
+        <listener class-name="com.helper.listeners.AnnotationTransformer"></listener>
+    </listeners>
+    <test parallel="true" thread-count="2" name="C:/Users/evyatar/IdeaProjects/nopcommerce_Automation">
+        <classes>
+          <class name="com.tests.AddCustomerTest"></class>
+            <class name="com.tests.AddDiscountTest"></class>
+        </classes>
+    </test>
+</suite>
